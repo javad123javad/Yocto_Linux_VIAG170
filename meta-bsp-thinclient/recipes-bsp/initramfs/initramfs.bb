@@ -1,0 +1,7 @@
+include original-image.bb
+LICENSE="MIT"
+
+
+IMAGE_FSTYPES = "${INITRAMFS_FSTYPES}"
+
+PACKAGE_INSTALL = "${IMAGE_INSTALL}"
