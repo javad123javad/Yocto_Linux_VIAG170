@@ -1,0 +1,83 @@
+--- Starting bitbake server pid 4473 at 2020-12-16 10:03:03.938519 ---
+[1;33mWARNING[0m: [33m/home/javad/workspace/YOCTO/poky/meta/lib/oe/maketype.py:99: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  if not isinstance(obj, collections.Callable):
+[0m
+[1;31mERROR[0m: [31mThe following required tools (as specified by HOSTTOOLS) appear to be unavailable in PATH, please install them in order to proceed:
+  python[0m
+Traceback (most recent call last):
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/cookerdata.py", line 289, in parseBaseConfiguration
+    bb.event.fire(bb.event.ConfigParsed(), self.data)
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/event.py", line 222, in fire
+    fire_class_handlers(event, d)
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/event.py", line 134, in fire_class_handlers
+    execute_handler(name, handler, event, d)
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/event.py", line 106, in execute_handler
+    ret = handler(event)
+  File "/home/javad/workspace/YOCTO/poky/meta/classes/base.bbclass", line 235, in base_eventhandler
+    setup_hosttools_dir(d.getVar('HOSTTOOLS_DIR'), 'HOSTTOOLS', d)
+  File "/home/javad/workspace/YOCTO/poky/meta/classes/base.bbclass", line 132, in setup_hosttools_dir
+    bb.fatal("The following required tools (as specified by HOSTTOOLS) appear to be unavailable in PATH, please install them in order to proceed:\n  %s" % " ".join(notfound))
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/__init__.py", line 104, in fatal
+    raise BBHandledException()
+bb.BBHandledException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/daemonize.py", line 77, in createDaemon
+    function()
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/server/process.py", line 433, in _startServer
+    self.cooker = bb.cooker.BBCooker(self.configuration, self.featureset)
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/cooker.py", line 197, in __init__
+    self.initConfigurationData()
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/cooker.py", line 356, in initConfigurationData
+    self.databuilder.parseBaseConfiguration()
+  File "/home/javad/workspace/YOCTO/poky/bitbake/lib/bb/cookerdata.py", line 316, in parseBaseConfiguration
+    raise bb.BBHandledException
+bb.BBHandledException
+[1;33mWARNING[0m: [33m/home/javad/workspace/YOCTO/poky/meta/lib/oe/maketype.py:99: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  if not isinstance(obj, collections.Callable):
+[0m
+WARNING: /home/javad/workspace/YOCTO/poky/meta/lib/oe/maketype.py:99: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  if not isinstance(obj, collections.Callable):
+
+[1;31mERROR[0m: [31mThe following required tools (as specified by HOSTTOOLS) appear to be unavailable in PATH, please install them in order to proceed:
+  python[0m
+ERROR: The following required tools (as specified by HOSTTOOLS) appear to be unavailable in PATH, please install them in order to proceed:
+  python
+--- Starting bitbake server pid 4786 at 2020-12-16 10:05:06.074223 ---
+[1;33mWARNING[0m: [33m/home/javad/workspace/YOCTO/poky/meta/lib/oe/maketype.py:99: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  if not isinstance(obj, collections.Callable):
+[0m
+Started bitbake server pid 4786
+[1;33mWARNING[0m: [33m/home/javad/workspace/YOCTO/poky/meta/lib/oe/maketype.py:99: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  if not isinstance(obj, collections.Callable):
+[0m
+WARNING: /home/javad/workspace/YOCTO/poky/meta/lib/oe/maketype.py:99: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  if not isinstance(obj, collections.Callable):
+
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2, 1]]
+Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'verbose': False, 'debug': 0, 'dry_run': False, 'dump_signatures': [], 'debug_domains': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '1276', 'PWD': '/home/javad/workspace/YOCTO/poky', 'LOGNAME': 'javad', 'HOME': '/home/javad', 'BBPATH': '/home/javad/workspace/YOCTO/poky/build', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'TERM': 'xterm-256color', 'USER': 'javad', 'PATH': '/home/javad/workspace/YOCTO/poky/scripts:/home/javad/workspace/YOCTO/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/HomePC:@/tmp/.ICE-unix/1204,unix/HomePC:/tmp/.ICE-unix/1204', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-cinnamon:/etc/xdg', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LANGUAGE': 'en_US', 'LC_ADDRESS': 'az_IR', 'LC_NAME': 'az_IR', 'CINNAMON_VERSION': '4.6.7', 'DESKTOP_SESSION': 'cinnamon', 'LC_MONETARY': 'az_IR', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT': 'seat0', 'XDG_SESSION_DESKTOP': 'cinnamon', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/home/javad/.Xauthority', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/javad', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'GDM_LANG': 'en_US', 'LC_PAPER': 'az_IR', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'X-Cinnamon', 'VTE_VERSION': '6003', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/aef8d555_2146_4fce_9a95_3b54399a396e', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'LC_IDENTIFICATION': 'az_IR', 'GTK_OVERLAY_SCROLLING': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.89', 'DISPLAY': ':0', 'SHLVL': '1', 'LC_TELEPHONE': 'az_IR', 'LC_MEASUREMENT': 'az_IR', 'XDG_VTNR': '7', 'XDG_SESSION_ID': 'c2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_DATA_DIRS': '/usr/share/cinnamon:/usr/share/gnome:/home/javad/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'GDMSESSION': 'cinnamon', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/javad/workspace/YOCTO/poky/build', 'LC_NUMERIC': 'az_IR', 'OLDPWD': '/home/javad/workspace/YOCTO/poky/build', '_': '/home/javad/workspace/YOCTO/poky/bitbake/bin/bitbake-layers'}, ['/home/javad/workspace/YOCTO/poky/bitbake/bin/bitbake-layers', 'add-layer', 'meta-intel/']]
+Running command ['parseConfiguration']
+Running command ['dataStoreConnectorFindVar', None, 'BBPATH']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BBLAYERS']
+Running command ['dataStoreConnectorGetVarHistory', None, 'BBFILE_COLLECTIONS']
+Running command ['dataStoreConnectorFindVar', None, 'BBFILE_COLLECTIONS']
+Running command ['dataStoreConnectorFindVar', None, 'BBLAYERS']
+Running command ['dataStoreConnectorGetVarHistory', None, 'BBFILE_COLLECTIONS']
+Running command ['dataStoreConnectorFindVar', None, 'BBFILE_COLLECTIONS']
+Running command ['dataStoreConnectorFindVar', None, 'BBLAYERS']
+Running command ['dataStoreConnectorGetVarHistory', None, 'BBFILE_COLLECTIONS']
+Running command ['dataStoreConnectorFindVar', None, 'BBFILE_COLLECTIONS']
+Running command ['dataStoreConnectorFindVar', None, 'BBLAYERS']
+Running command ['dataStoreConnectorGetVarHistory', None, 'BBFILE_COLLECTIONS']
+Running command ['dataStoreConnectorFindVar', None, 'BBFILE_COLLECTIONS']
+Running command ['clientComplete']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
