@@ -1,7 +1,0 @@
-sources/Documentation
-sources/base
-sources/meta-freescale
-sources/meta-freescale-3rdparty
-sources/meta-freescale-distro
-sources/meta-openembedded
-sources/poky

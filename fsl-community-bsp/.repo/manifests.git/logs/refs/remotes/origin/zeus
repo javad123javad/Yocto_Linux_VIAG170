@@ -1,1 +1,0 @@
-0000000000000000000000000000000000000000 377e507e62d26f9db2ced23efbe5151e12a70da3 Javad <javad@HomePC.(none)> 1608184400 +0330	fetch --quiet --progress origin --tags +refs/heads/*:refs/remotes/origin/* +refs/heads/dunfell:refs/remotes/origin/dunfell +refs/tags/*:refs/tags/*: storing head
