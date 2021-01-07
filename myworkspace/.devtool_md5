@@ -11,3 +11,10 @@ alsautils|recipes/alsautils/alsautils_git.bb|0e554e2577e983f9a08eb99372c19cfa
 alsautils|appends/alsautils_git.bbappend|25ac311996212432110da78f0b6c0a75
 linrad|recipes/linrad/linrad_14a.bb|0874d2b18b64008c7031c218844f37c8
 linrad|appends/linrad_14a.bbappend|d41560401c26e0b632e608a18e1d04bd
+exfat|recipes/exfat/exfat_git.bb|fb72f489d259356ac4f9b1dd6e44c254
+exfat|appends/exfat_git.bbappend|babb9697ed2e9bffa26cd2245d825afd
+fuse|recipes/fuse/fuse_2.9.9.bb|92c0aa2c71caee27012c48648844dc9f
+fuse|appends/fuse_2.9.9.bbappend|be7072e4cbbb6089de1c23b399f67f1e
+ppp|recipes/ppp/ppp_2.4.8.bb|494679929c14b64531b3da4763c7a722
+ppp|appends/ppp_2.4.8.bbappend|5bb8cf07c2cab8e995f02e04f489cdd4
+wvdial|appends/wvdial_1.61.bbappend|931732d9687d78b1665868169ac339df

@@ -1,0 +1,41 @@
+# Recipe created by recipetool
+# This is the basis of a recipe and may need further editing in order to be fully functional.
+# (Feel free to remove these comments when editing.)
+
+# WARNING: the following LICENSE and LIC_FILES_CHKSUM values are best guesses - it is
+# your responsibility to verify that the values are complete and correct.
+#
+# The following license files were not able to be identified and are
+# represented as "Unknown" below, you will need to check them yourself:
+#   pppd/plugins/radius/COPYRIGHT
+#   pppd/plugins/pppoatm/COPYING
+LICENSE = "Unknown"
+LIC_FILES_CHKSUM = "file://pppd/plugins/radius/COPYRIGHT;md5=d939568e8bd5baf320571e4e6881400c \
+                    file://pppd/plugins/pppoatm/COPYING;md5=d4e7b11df96ad750395663339b18ec80"
+
+SRC_URI = "https://download.samba.org/pub/ppp/ppp-${PV}.tar.gz"
+SRC_URI[md5sum] = "c88153ae3d16ae114152cd3c15c7301d"
+SRC_URI[sha1sum] = "56ba143f331f6436efa3a1d41c75691c828833ba"
+SRC_URI[sha256sum] = "f938b35eccde533ea800b15a7445b2f1137da7f88e32a16898d02dee8adc058d"
+SRC_URI[sha384sum] = "cd952ba04c734776d1d1773cb445573198c3127a8069edcdd1593df61cafb1a12a6028b5b9f1203cb52f9d77f9a2e5cb"
+SRC_URI[sha512sum] = "5721b1915f2d02b895508601120d09ff17a76cbab62cbcb7d0216837bdf84f10f345311b77f346b120bda3b488ae10d7d942c4d7d5f1e369d0a002f3071099f1"
+
+S = "${WORKDIR}/ppp-${PV}"
+
+# NOTE: no Makefile found, unable to determine what needs to be done
+
+do_configure () {
+	# Specify any needed configure commands here
+	:
+}
+
+do_compile () {
+	# Specify compilation commands here
+	:
+}
+
+do_install () {
+	# Specify install commands here
+	:
+}
+
