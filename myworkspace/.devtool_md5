@@ -4,5 +4,5 @@ nano|recipes/nano/nano_2.5.1.bb|ce6072b86cbeb4f0cf44b59d1dd76b33
 nano|appends/nano_2.5.1.bbappend|7a51069c87542733078d7babe2f8e882
 hello|appends/hello_2.9.bbappend|2262a47113bc125def12769d1c65aaa3
 psplash|appends/psplash_git.bbappend|44846b3b0ff620c677e93a7d84858db1
-rtl-sdr|recipes/rtl-sdr/rtl-sdr_git.bb|efd7e9f71760c37b6fc67d66692d69f7
-rtl-sdr|appends/rtl-sdr_git.bbappend|28e10c5c1a21028bc2ed6b3a77127ff4
+libmicrohttpd|recipes/libmicrohttpd/libmicrohttpd_0.9.72.bb|ea2a93af7353a86f724fe632af882124
+libmicrohttpd|appends/libmicrohttpd_0.9.72.bbappend|6edacc2f4271e31183ba82db0f0fefe4
